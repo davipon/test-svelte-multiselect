@@ -1,0 +1,8 @@
+{
+	"testEnvironment": "jsdom",
+	"transformIgnorePatterns": ["node_modules/?!(svelte-multiselect)"],
+	"transform": {
+		"^.+\\.[t|j]s?$": "esbuild-jest",
+		"^.+\\.svelte$": ["svelte-jester", { "preprocess": true }]
+	}
+}
